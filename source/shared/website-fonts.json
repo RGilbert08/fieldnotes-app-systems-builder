@@ -1,0 +1,112 @@
+{
+  "fonts": [
+    {
+      "key": "fraunces",
+      "label": "Fraunces",
+      "category": "Serif",
+      "fontStack": "\"Fraunces\", Georgia, serif"
+    },
+    {
+      "key": "eb-garamond",
+      "label": "EB Garamond",
+      "category": "Serif",
+      "fontStack": "\"EB Garamond\", Georgia, serif"
+    },
+    {
+      "key": "dm-serif-display",
+      "label": "DM Serif Display",
+      "category": "Serif",
+      "fontStack": "\"DM Serif Display\", Georgia, serif"
+    },
+    {
+      "key": "libre-baskerville",
+      "label": "Libre Baskerville",
+      "category": "Serif",
+      "fontStack": "\"Libre Baskerville\", Georgia, serif"
+    },
+    {
+      "key": "crimson-pro",
+      "label": "Crimson Pro",
+      "category": "Serif",
+      "fontStack": "\"Crimson Pro\", Georgia, serif"
+    },
+    {
+      "key": "source-serif-4",
+      "label": "Source Serif 4",
+      "category": "Serif",
+      "fontStack": "\"Source Serif 4\", Georgia, serif"
+    },
+    {
+      "key": "nunito",
+      "label": "Nunito",
+      "category": "Sans serif",
+      "fontStack": "Nunito, Arial, sans-serif"
+    },
+    {
+      "key": "roboto",
+      "label": "Roboto",
+      "category": "Sans serif",
+      "fontStack": "Roboto, Arial, sans-serif"
+    },
+    {
+      "key": "open-sans",
+      "label": "Open Sans",
+      "category": "Sans serif",
+      "fontStack": "\"Open Sans\", Arial, sans-serif"
+    },
+    {
+      "key": "raleway",
+      "label": "Raleway",
+      "category": "Sans serif",
+      "fontStack": "Raleway, Arial, sans-serif"
+    },
+    {
+      "key": "source-sans-3",
+      "label": "Source Sans 3",
+      "category": "Sans serif",
+      "fontStack": "\"Source Sans 3\", Arial, sans-serif"
+    },
+    {
+      "key": "work-sans",
+      "label": "Work Sans",
+      "category": "Sans serif",
+      "fontStack": "\"Work Sans\", Arial, sans-serif"
+    },
+    {
+      "key": "manrope",
+      "label": "Manrope",
+      "category": "Sans serif",
+      "fontStack": "Manrope, Arial, sans-serif"
+    },
+    {
+      "key": "space-grotesk",
+      "label": "Space Grotesk",
+      "category": "Sans serif",
+      "fontStack": "\"Space Grotesk\", Arial, sans-serif"
+    },
+    {
+      "key": "ibm-plex-mono",
+      "label": "IBM Plex Mono",
+      "category": "Monospace",
+      "fontStack": "\"IBM Plex Mono\", ui-monospace, monospace"
+    },
+    {
+      "key": "source-code-pro",
+      "label": "Source Code Pro",
+      "category": "Monospace",
+      "fontStack": "\"Source Code Pro\", ui-monospace, monospace"
+    },
+    {
+      "key": "space-mono",
+      "label": "Space Mono",
+      "category": "Monospace",
+      "fontStack": "\"Space Mono\", ui-monospace, monospace"
+    },
+    {
+      "key": "dm-mono",
+      "label": "DM Mono",
+      "category": "Monospace",
+      "fontStack": "\"DM Mono\", ui-monospace, monospace"
+    }
+  ]
+}

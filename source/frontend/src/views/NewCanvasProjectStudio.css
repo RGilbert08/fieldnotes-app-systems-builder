@@ -1,0 +1,810 @@
+.canvas-studio-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 8% 0%, rgba(183, 133, 98, .17), transparent 34rem),
+    radial-gradient(ellipse at 100% 18%, rgba(83, 144, 138, .12), transparent 32rem),
+    #191f23;
+  color: #f4f0e9;
+}
+
+.canvas-studio-header {
+  position: sticky;
+  z-index: 30;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  min-height: 4.6rem;
+  padding: .7rem clamp(1rem, 4vw, 3.5rem);
+  border-bottom: 1px solid rgba(221, 201, 179, .16);
+  background: rgba(25, 31, 35, .94);
+  backdrop-filter: blur(14px);
+}
+
+.canvas-studio-header button {
+  min-height: 2.3rem;
+  border: 1px solid rgba(211, 190, 169, .35);
+  border-radius: .65rem;
+  background: transparent;
+  color: #e5d4c4;
+  padding: .5rem .75rem;
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.canvas-studio-header button:hover {
+  border-color: #c29d7e;
+  background: rgba(178, 131, 98, .11);
+}
+
+.canvas-studio-header button:focus-visible,
+.canvas-studio-template:focus-visible {
+  outline: 3px solid #79b7ad;
+  outline-offset: 3px;
+}
+
+.canvas-studio-header__back {
+  justify-self: start;
+}
+
+.canvas-studio-brand {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+}
+
+.canvas-studio-brand__mark {
+  display: grid;
+  width: 2.15rem;
+  height: 2.15rem;
+  place-items: center;
+  border: 1px solid rgba(199, 159, 126, .52);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #74513c, #315f60);
+  color: #fff8ef;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .85rem;
+}
+
+.canvas-studio-brand strong,
+.canvas-studio-brand small {
+  display: block;
+}
+
+.canvas-studio-brand strong {
+  color: #f4f0e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+.canvas-studio-brand small {
+  margin-top: .12rem;
+  color: #a8b0ad;
+  font-size: .55rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.canvas-studio-header__user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .8rem;
+  color: #b8c0bd;
+  font-size: .7rem;
+}
+
+.canvas-studio-header__save {
+  background: linear-gradient(105deg, #9b6e50, #3e817b) !important;
+  border-color: rgba(183, 219, 203, .65) !important;
+  color: #fffaf4 !important;
+}
+
+.canvas-studio-header__save:disabled {
+  cursor: not-allowed !important;
+  opacity: .55;
+}
+
+.canvas-studio-main {
+  width: min(100% - 2rem, 1320px);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4.2rem) 0 4rem;
+}
+
+.canvas-studio-intro {
+  max-width: 52rem;
+}
+
+.canvas-studio-eyebrow {
+  color: #85b9ad;
+  font-size: .63rem;
+  font-weight: 850;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.canvas-studio-intro h1 {
+  margin: .6rem 0 .7rem;
+  color: #f4f0e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: -.05em;
+  line-height: 1.05;
+}
+
+.canvas-studio-intro p {
+  max-width: 48rem;
+  margin: 0;
+  color: #aeb8b4;
+  font-size: .87rem;
+  line-height: 1.65;
+}
+
+.canvas-studio-title-field {
+  display: grid;
+  gap: .42rem;
+  margin-top: 1rem;
+  max-width: 27rem;
+}
+
+.canvas-studio-title-field span {
+  color: #c0c8c4;
+  font-size: .68rem;
+  font-weight: 750;
+  letter-spacing: .05em;
+}
+
+.canvas-studio-title-field input {
+  width: 100%;
+  min-height: 2.7rem;
+  border: 1px solid rgba(191, 160, 133, .45);
+  border-radius: .65rem;
+  background: #20282c;
+  color: #f4f0e9;
+  font: inherit;
+  font-size: .83rem;
+  padding: .65rem .8rem;
+}
+
+.canvas-studio-title-field input:focus-visible {
+  border-color: #83b9ad;
+  outline: 3px solid rgba(121, 183, 173, .32);
+  outline-offset: 2px;
+}
+
+.canvas-studio-template-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.canvas-studio-template {
+  display: flex;
+  min-width: 0;
+  min-height: 17.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.1rem;
+  padding: 1rem;
+  border: 1px solid rgba(191, 160, 133, .54);
+  border-radius: 1rem;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(69, 127, 123, .14), transparent 15rem),
+    linear-gradient(155deg, #242d31, #20272a);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .18);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 140ms ease, transform 140ms ease, box-shadow 140ms ease;
+}
+
+.canvas-studio-template:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: #83b9ad;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .27);
+}
+
+.canvas-studio-template:disabled {
+  cursor: wait;
+  opacity: .62;
+}
+
+.canvas-studio-diagram {
+  display: grid;
+  width: 100%;
+  height: 7.1rem;
+  gap: .4rem;
+  padding: .55rem;
+  border: 1px solid rgba(203, 184, 165, .2);
+  border-radius: .65rem;
+  background: rgba(12, 17, 19, .45);
+}
+
+.canvas-studio-diagram > span {
+  min-width: 0;
+  border: 1px solid rgba(181, 142, 112, .78);
+  border-radius: .35rem;
+  background:
+    linear-gradient(145deg, rgba(174, 131, 99, .16), rgba(78, 141, 134, .1));
+}
+
+.canvas-studio-diagram--balanced {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.canvas-studio-diagram--rails {
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.canvas-studio-diagram--asymmetric {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: .7fr 1fr;
+}
+
+.canvas-studio-diagram--asymmetric > span:first-child {
+  grid-column: 1 / -1;
+}
+
+.canvas-studio-template__copy {
+  display: grid;
+  align-content: start;
+  gap: .45rem;
+}
+
+.canvas-studio-template__copy strong {
+  color: #f3ece2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.canvas-studio-template__copy small {
+  color: #aeb8b4;
+  font-size: .68rem;
+  line-height: 1.5;
+}
+
+.canvas-studio-template__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+  margin-top: auto;
+  padding-top: .8rem;
+  border-top: 1px solid rgba(205, 188, 168, .17);
+  color: #a9d0c5;
+  font-size: .67rem;
+  font-weight: 800;
+}
+
+.canvas-studio-status,
+.canvas-studio-notice,
+.canvas-studio-error {
+  margin: 1rem 0 0;
+  padding: .7rem .85rem;
+  border: 1px solid rgba(114, 164, 150, .35);
+  border-radius: .7rem;
+  background: rgba(62, 113, 104, .12);
+  color: #c1e1d5;
+  font-size: .74rem;
+}
+
+.canvas-studio-error {
+  border-color: rgba(218, 123, 105, .42);
+  background: rgba(147, 65, 52, .14);
+  color: #f1b8aa;
+}
+
+.canvas-studio-empty {
+  display: grid;
+  justify-items: center;
+  gap: .5rem;
+  margin-top: 1.7rem;
+  padding: 2.3rem 1rem;
+  border: 1px dashed rgba(200, 172, 145, .4);
+  border-radius: 1rem;
+  color: #aeb8b4;
+  text-align: center;
+}
+
+.canvas-studio-empty > span {
+  color: #a8cfc3;
+  font-size: 1.5rem;
+}
+
+.canvas-studio-empty strong {
+  color: #ede5da;
+  font-size: .88rem;
+}
+
+.canvas-studio-empty p {
+  margin: 0;
+  font-size: .72rem;
+}
+
+.canvas-studio-workspace {
+  margin-top: 1.6rem;
+}
+
+.canvas-studio-workspace .dynamic-mesh-viewport,
+.canvas-studio-workspace .dynamic-mesh-subtabs {
+  border-color: rgba(175, 142, 115, .35);
+}
+
+/* The creation studio keeps component tools beside the live template preview. */
+.canvas-studio-editor-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 23rem);
+  align-items: start;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.canvas-studio-editor-layout > .dynamic-mesh-layout {
+  min-width: 0;
+  max-width: none;
+}
+
+.canvas-studio-editor {
+  position: sticky;
+  top: 1rem;
+  display: grid;
+  gap: .85rem;
+  max-height: min(78vh, 860px);
+  min-width: 0;
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid #343b43;
+  border-radius: 14px;
+  background: linear-gradient(155deg, #171b20, #0d1014);
+  color: #e9e5df;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .2);
+}
+
+.canvas-studio-editor__heading span {
+  display: block;
+  margin-bottom: .3rem;
+  color: #a9b2bb;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.canvas-studio-editor__heading strong {
+  display: block;
+  color: #f4eee6;
+  font-size: .95rem;
+}
+
+.canvas-studio-editor .native-canvas-toolbox {
+  margin: 0;
+  border-color: #343b43;
+  background: #12161a;
+}
+
+.canvas-studio-editor .native-canvas-toolbox > summary,
+.canvas-studio-editor .native-canvas-toolbox__category > summary {
+  color: #e9e5df;
+  cursor: pointer;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.canvas-studio-editor .native-canvas-toolbox > p {
+  color: #aab1b8;
+  font-size: .68rem;
+  line-height: 1.45;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__scroll {
+  max-height: 250px;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__category {
+  padding: .45rem;
+  border: 1px solid #2d343b;
+  border-radius: 8px;
+  background: #181d22;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__category > summary {
+  padding: .15rem;
+  color: #c9a78d;
+  font-size: .62rem;
+  letter-spacing: .04em;
+  list-style-position: inside;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__grid {
+  margin-top: .45rem;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__item {
+  min-height: 2.35rem;
+  border-color: #3a424a;
+  background: #22282e;
+  color: #ece8e2;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__item:hover:not(:disabled) {
+  border-color: #a97852;
+  background: #2c2926;
+}
+
+.canvas-studio-editor .native-canvas-toolbox__item:disabled {
+  cursor: not-allowed;
+  opacity: .48;
+}
+
+.canvas-studio-editor__properties {
+  display: grid;
+  gap: .7rem;
+  padding-top: .9rem;
+  border-top: 1px solid #343b43;
+}
+
+.canvas-studio-editor__properties h3 {
+  margin: 0;
+  color: #c9a78d;
+  font-size: .72rem;
+  letter-spacing: .04em;
+}
+
+.canvas-studio-editor .dynamic-mesh-block__editor-field {
+  color: #d7d3ce;
+  font-size: .67rem;
+}
+
+.canvas-studio-editor .dynamic-mesh-block__editor-field input,
+.canvas-studio-editor .dynamic-mesh-block__editor-field textarea {
+  border-color: #3a424a;
+  background: #0e1216;
+  color: #f4eee6;
+}
+
+.canvas-studio-editor .native-canvas-editor__field-label {
+  display: block;
+  margin-bottom: .35rem;
+  color: #d7d3ce;
+  font-size: .67rem;
+  font-weight: 700;
+}
+
+.canvas-studio-editor .native-canvas-spectrum__presets button {
+  border-color: #454b50;
+  background: #20262b;
+  color: #eee9e2;
+}
+
+.canvas-studio-editor .native-canvas-spectrum__presets button:hover:not(:disabled) {
+  border-color: #a97852;
+  background: #2c2926;
+}
+
+.canvas-studio-editor .native-canvas-spectrum__presets button:disabled {
+  cursor: not-allowed;
+  opacity: .48;
+}
+
+.canvas-studio-editor__empty {
+  margin: 0;
+  padding: .75rem;
+  border: 1px dashed #3a424a;
+  border-radius: 9px;
+  color: #aab1b8;
+  font-size: .7rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .canvas-studio-editor-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .canvas-studio-editor {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .canvas-studio-template-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .canvas-studio-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .canvas-studio-brand {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .canvas-studio-header__back,
+  .canvas-studio-header__user {
+    grid-row: 2;
+  }
+
+  .canvas-studio-header__user {
+    font-size: .63rem;
+  }
+
+  .canvas-studio-header__user span {
+    display: none;
+  }
+
+  .canvas-studio-main {
+    width: min(100% - 1.1rem, 1320px);
+    padding-top: 2rem;
+  }
+
+  .canvas-studio-template-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .canvas-studio-template {
+    min-height: 15rem;
+  }
+}
+
+.canvas-studio-editor__export {
+  gap: 0.7rem;
+}
+
+.canvas-studio-editor__export h3 {
+  margin: 0;
+}
+
+.canvas-studio-editor__export-button,
+.website-property-export__button {
+  width: 100%;
+  border: 1px solid #d2ac7e;
+  border-radius: 0.7rem;
+  padding: 0.75rem 0.85rem;
+  color: #fff8ef;
+  background: linear-gradient(120deg, #594331, #302b27);
+  box-shadow: 0 8px 22px rgba(48, 43, 39, 0.16);
+  font-weight: 750;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.canvas-studio-editor__export-button:hover,
+.website-property-export__button:hover {
+  background: linear-gradient(120deg, #73583f, #453a30);
+}
+
+.canvas-studio-editor__export-button:disabled,
+.website-property-export__button:disabled {
+  cursor: progress;
+  opacity: 0.7;
+}
+
+.canvas-studio-editor__export-status {
+  margin: 0;
+  color: #738278;
+  font-size: 0.75rem;
+}
+
+.canvas-studio-editor__export-status.is-error {
+  color: #a13d35;
+}
+
+@scope (.role-workspace[data-user-theme="default"]) {
+/* Studio authoring chrome: Fieldnotes mineral slate and measured teal. */
+.canvas-studio-page {
+  background:
+    radial-gradient(ellipse at 8% 0%, rgba(179, 211, 218, .28), transparent 34rem),
+    radial-gradient(ellipse at 100% 18%, rgba(206, 199, 253, .2), transparent 32rem),
+    #eaf2f4;
+  color: #20343d;
+}
+.canvas-studio-header {
+  border-bottom-color: #cfdee1;
+  background: rgba(237, 244, 245, .96);
+}
+.canvas-studio-header button {
+  border-color: #bfd5da;
+  color: #315f70;
+}
+.canvas-studio-header button:hover {
+  border-color: #6192a4;
+  background: #e5f0f2;
+}
+.canvas-studio-header button:focus-visible,
+.canvas-studio-template:focus-visible { outline-color: #315f70; }
+.canvas-studio-brand__mark {
+  border-color: #a9cbd3;
+  background: linear-gradient(145deg, #315f70, #6192a4);
+  color: #f7fbfc;
+}
+.canvas-studio-brand strong,
+.canvas-studio-intro h1 { color: #20343d; }
+.canvas-studio-brand small,
+.canvas-studio-header__user,
+.canvas-studio-intro p { color: #58717b; }
+.canvas-studio-header__save {
+  background: #315f70 !important;
+  border-color: #315f70 !important;
+  color: #f7fbfc !important;
+}
+.canvas-studio-eyebrow,
+.canvas-studio-title-field span { color: #315f70; }
+.canvas-studio-title-field input {
+  border-color: #bfd5da;
+  background: #f8fbfb;
+  color: #20343d;
+}
+.canvas-studio-title-field input:focus-visible {
+  border-color: #6192a4;
+  outline-color: rgba(97, 146, 164, .28);
+}
+.canvas-studio-template {
+  border-color: #bfd5da;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(179, 211, 218, .32), transparent 15rem),
+    linear-gradient(155deg, #f8fbfb, #e7f0f2);
+  box-shadow: 0 15px 35px rgba(42, 78, 90, .1);
+  color: #20343d;
+}
+.canvas-studio-template:hover:not(:disabled) {
+  border-color: #6192a4;
+  box-shadow: 0 20px 40px rgba(42, 78, 90, .16);
+}
+.canvas-studio-diagram {
+  border-color: #cfdee1;
+  background: #e3edef;
+}
+.canvas-studio-diagram > span {
+  border-color: #8ab3bf;
+  background: linear-gradient(145deg, rgba(97, 146, 164, .24), rgba(206, 199, 253, .24));
+}
+.canvas-studio-template__copy strong,
+.canvas-studio-empty strong { color: #20343d; }
+.canvas-studio-template__copy small,
+.canvas-studio-empty { color: #58717b; }
+.canvas-studio-template__action,
+.canvas-studio-empty > span { color: #315f70; }
+.canvas-studio-template__action { border-color: #cfdee1; }
+.canvas-studio-empty { border-color: #a9cbd3; }
+.canvas-studio-workspace .dynamic-mesh-viewport,
+.canvas-studio-workspace .dynamic-mesh-subtabs { border-color: #b3d3da; }
+
+.canvas-studio-editor {
+  border-color: #bfd5da;
+  background: linear-gradient(155deg, #f3f8f9, #e5eef0);
+  color: #20343d;
+  box-shadow: 0 18px 40px rgba(42, 78, 90, .12);
+}
+.canvas-studio-editor__heading span,
+.canvas-studio-editor .native-canvas-toolbox > p,
+.canvas-studio-editor .dynamic-mesh-block__editor-field,
+.canvas-studio-editor .native-canvas-editor__field-label { color: #58717b; }
+.canvas-studio-editor__heading strong { color: #20343d; }
+.canvas-studio-editor .native-canvas-toolbox {
+  border-color: #cfdee1;
+  background: #edf4f5;
+}
+.canvas-studio-editor .native-canvas-toolbox > summary,
+.canvas-studio-editor .native-canvas-toolbox__category > summary { color: #294d5b; }
+.canvas-studio-editor .native-canvas-toolbox__category {
+  border-color: #cfdee1;
+  background: #f8fbfb;
+}
+.canvas-studio-editor .native-canvas-toolbox__category > summary,
+.canvas-studio-editor__properties h3 { color: #315f70; }
+.canvas-studio-editor .native-canvas-toolbox__item,
+.canvas-studio-editor .native-canvas-spectrum__presets button {
+  border-color: #bfd5da;
+  background: #f8fbfb;
+  color: #294d5b;
+}
+.canvas-studio-editor .native-canvas-toolbox__item:hover:not(:disabled),
+.canvas-studio-editor .native-canvas-spectrum__presets button:hover:not(:disabled) {
+  border-color: #6192a4;
+  background: #e5f0f2;
+}
+.canvas-studio-editor__properties { border-color: #cfdee1; }
+.canvas-studio-editor .dynamic-mesh-block__editor-field input,
+.canvas-studio-editor .dynamic-mesh-block__editor-field textarea {
+  border-color: #bfd5da;
+  background: #f8fbfb;
+  color: #20343d;
+}
+.canvas-studio-editor .native-canvas-spectrum__presets button { border-color: #bfd5da; }
+.canvas-studio-editor__empty { border-color: #bfd5da; color: #58717b; }
+.canvas-studio-editor__export-button,
+.website-property-export__button {
+  border-color: #315f70;
+  background: #315f70;
+  color: #f7fbfc;
+  box-shadow: 0 8px 22px rgba(42, 78, 90, .15);
+}
+.canvas-studio-editor__export-button:hover,
+.website-property-export__button:hover { background: #294d5b; }
+.canvas-studio-editor__export-status { color: #58717b; }
+
+/* App chrome only; the editable/saved Canvas surface keeps its own design colors. */
+.canvas-studio-page {
+  background:
+    radial-gradient(ellipse at 88% 0%, rgba(206, 199, 253, .17), transparent 30rem),
+    #f5f2f6;
+}
+.canvas-studio-header { border-color: #ddd3e0; background: rgba(252, 250, 252, .95); font-family: "Manrope", "DM Sans", system-ui, sans-serif; }
+.canvas-studio-header__back,
+.canvas-studio-header__user { color: #795f80; }
+.canvas-studio-header button,
+.canvas-studio-template,
+.canvas-studio-header__save,
+.canvas-studio-editor__export-button,
+.website-property-export__button {
+  border-color: #d9cddd;
+  background: #fcfafc;
+  color: #301934;
+  font-family: "Manrope", "DM Sans", system-ui, sans-serif;
+}
+.canvas-studio-header button:hover,
+.canvas-studio-template:hover { border-color: #856088; background: #f1edf4; }
+.canvas-studio-header__save,
+.canvas-studio-editor__export-button,
+.website-property-export__button {
+  border-color: #301934;
+  background: #301934;
+  color: #fcfafc;
+  box-shadow: 0 7px 18px rgba(48, 25, 52, .13);
+}
+.canvas-studio-header__save:hover,
+.canvas-studio-editor__export-button:hover,
+.website-property-export__button:hover { background: #513856; }
+.canvas-studio-header button:focus-visible,
+.canvas-studio-template:focus-visible,
+.canvas-studio-editor button:focus-visible { outline-color: #6192a4; }
+.canvas-studio-editor {
+  border-color: #d9cddd;
+  background: linear-gradient(155deg, #fcfafc, #f0edf4);
+  color: #301934;
+  box-shadow: 0 18px 42px rgba(48, 25, 52, .1);
+}
+.canvas-studio-editor__heading strong,
+.canvas-studio-editor__properties h3 { color: #301934; font-family: "Manrope", "DM Sans", system-ui, sans-serif; }
+.canvas-studio-editor__heading span,
+.canvas-studio-editor .native-canvas-toolbox > p,
+.canvas-studio-editor .dynamic-mesh-block__editor-field,
+.canvas-studio-editor .native-canvas-editor__field-label { color: #795f80; }
+.canvas-studio-editor .native-canvas-toolbox,
+.canvas-studio-editor__properties { border-color: #ddd3e0; }
+.canvas-studio-editor .native-canvas-toolbox { background: #f1edf4; }
+.canvas-studio-editor .native-canvas-toolbox__category {
+  border-color: #e1d8e4;
+  background: #fcfafc;
+}
+.canvas-studio-editor .native-canvas-toolbox > summary,
+.canvas-studio-editor .native-canvas-toolbox__category > summary { color: #513856; }
+.canvas-studio-editor .native-canvas-toolbox__item,
+.canvas-studio-editor .native-canvas-spectrum__presets button,
+.canvas-studio-editor .dynamic-mesh-block__editor-field input,
+.canvas-studio-editor .dynamic-mesh-block__editor-field textarea {
+  border-color: #d7c9dc;
+  background: #fff;
+  color: #301934;
+}
+.canvas-studio-editor .native-canvas-toolbox__item:hover:not(:disabled),
+.canvas-studio-editor .native-canvas-spectrum__presets button:hover:not(:disabled) {
+  border-color: #6192a4;
+  background: #edf5f7;
+}
+.canvas-studio-editor__empty { border-color: #b3d3da; color: #795f80; }
+}

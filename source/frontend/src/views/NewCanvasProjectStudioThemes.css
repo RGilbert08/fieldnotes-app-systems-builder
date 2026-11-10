@@ -1,0 +1,94 @@
+@scope (.role-workspace[data-user-theme="default"]) {
+.canvas-studio-theme-step,
+.canvas-studio-current-theme {
+  display: grid;
+  gap: 18px;
+  width: min(100%, 1120px);
+  margin: 22px auto;
+}
+
+.canvas-studio-current-theme {
+  border: 1px solid #ded7ce;
+  border-radius: 18px;
+  padding: clamp(14px, 2vw, 22px);
+  background: #fffefa;
+}
+
+.canvas-studio-theme-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.canvas-studio-theme-actions button,
+.canvas-studio-current-theme > button {
+  min-height: 42px;
+  border: 1px solid #d7cec2;
+  border-radius: 10px;
+  padding: 9px 14px;
+  color: #38312a;
+  background: #fffdf9;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.canvas-studio-theme-actions .canvas-studio-theme-actions__primary,
+.canvas-studio-current-theme > .canvas-studio-theme-actions__primary {
+  border-color: #684838;
+  color: #fff9f0;
+  background: #684838;
+}
+
+.canvas-studio-theme-actions button:disabled,
+.canvas-studio-current-theme > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+  .canvas-studio-theme-actions > button {
+    width: 100%;
+  }
+}
+
+.canvas-studio-current-theme {
+  border-color: #cfdee1;
+  background: #f6fafb;
+}
+.canvas-studio-theme-actions button,
+.canvas-studio-current-theme > button {
+  border-color: #bfd5da;
+  color: #294d5b;
+  background: #f8fbfb;
+}
+.canvas-studio-theme-actions .canvas-studio-theme-actions__primary,
+.canvas-studio-current-theme > .canvas-studio-theme-actions__primary {
+  border-color: #315f70;
+  color: #f7fbfc;
+  background: #315f70;
+}
+
+.canvas-studio-theme-step,
+.canvas-studio-current-theme {
+  border-color: #ddd3e0;
+  background: #fcfafc;
+  color: #301934;
+  font-family: "Manrope", "DM Sans", system-ui, sans-serif;
+}
+.canvas-studio-theme-actions button,
+.canvas-studio-current-theme > button {
+  border-color: #d7c9dc;
+  background: #fcfafc;
+  color: #301934;
+  font-family: "Manrope", "DM Sans", system-ui, sans-serif;
+}
+.canvas-studio-theme-actions .canvas-studio-theme-actions__primary,
+.canvas-studio-current-theme > .canvas-studio-theme-actions__primary {
+  border-color: #301934;
+  background: #301934;
+  color: #fcfafc;
+  box-shadow: 0 6px 16px rgba(48, 25, 52, .12);
+}
+}

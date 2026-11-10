@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "executive-navy-ivory",
+      "name": "Executive Navy & Ivory",
+      "fontFamily": "Playfair Display",
+      "fontKey": "playfair-display",
+      "fontStack": "\"Playfair Display\", Georgia, serif",
+      "description": "Formal leadership layouts with calm ivory surfaces.",
+      "tokens": {
+        "canvas": "#F3EFE5",
+        "surface": "#FFFCF5",
+        "accent": "#243B5A",
+        "text": "#263344",
+        "textOnAccent": "#FFFDF7",
+        "muted": "#687586",
+        "border": "#D8CFBE"
+      }
+    },
+    {
+      "id": "crimson-crest-charcoal",
+      "name": "Crimson Crest & Charcoal",
+      "fontFamily": "Merriweather",
+      "fontKey": "merriweather",
+      "fontStack": "\"Merriweather\", Georgia, serif",
+      "description": "Confident crimson highlights on a charcoal foundation.",
+      "tokens": {
+        "canvas": "#24272B",
+        "surface": "#30343A",
+        "accent": "#C13B4B",
+        "text": "#F4EEF0",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#C0B8BC",
+        "border": "#674047"
+      }
+    },
+    {
+      "id": "academic-emerald-cream",
+      "name": "Academic Emerald & Cream",
+      "fontFamily": "Lora",
+      "fontKey": "lora",
+      "fontStack": "\"Lora\", Georgia, serif",
+      "description": "Scholarly emerald accents with antique linen warmth.",
+      "tokens": {
+        "canvas": "#F0E9D9",
+        "surface": "#FBF7ED",
+        "accent": "#176348",
+        "text": "#28372F",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#6B6B5C",
+        "border": "#D4C7AC"
+      }
+    },
+    {
+      "id": "clinical-teal-slate",
+      "name": "Clinical Teal & Muted Slate",
+      "fontFamily": "Inter",
+      "fontKey": "inter",
+      "fontStack": "Inter, Arial, sans-serif",
+      "description": "Clear teal signals on a cool, restrained slate canvas.",
+      "tokens": {
+        "canvas": "#E7ECEE",
+        "surface": "#F9FBFB",
+        "accent": "#087887",
+        "text": "#29363B",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#617177",
+        "border": "#B9C6CA"
+      }
+    },
+    {
+      "id": "biotech-indigo-frost",
+      "name": "Biotech Indigo & Pure Frost",
+      "fontFamily": "Roboto Mono",
+      "fontKey": "roboto-mono",
+      "fontStack": "\"Roboto Mono\", ui-monospace, monospace",
+      "description": "Precise indigo controls on crisp white cards.",
+      "tokens": {
+        "canvas": "#EEF0F8",
+        "surface": "#FFFFFF",
+        "accent": "#30387F",
+        "text": "#282D43",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#68708A",
+        "border": "#C9CEE0"
+      }
+    },
+    {
+      "id": "wellness-mint-sand",
+      "name": "Wellness Mint & Warm Sand",
+      "fontFamily": "Quicksand",
+      "fontKey": "quicksand",
+      "fontStack": "\"Quicksand\", Arial, sans-serif",
+      "description": "Gentle mint accents balanced by earthy sand.",
+      "tokens": {
+        "canvas": "#EEE2D0",
+        "surface": "#FBF6EE",
+        "accent": "#287B65",
+        "text": "#304138",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#6E756A",
+        "border": "#D0C0A8"
+      }
+    },
+    {
+      "id": "corporate-steel-silver",
+      "name": "Corporate Steel & Silver",
+      "fontFamily": "Montserrat",
+      "fontKey": "montserrat",
+      "fontStack": "Montserrat, Arial, sans-serif",
+      "description": "Structured steel-blue details on metallic silver.",
+      "tokens": {
+        "canvas": "#E4E7EA",
+        "surface": "#F8F9FA",
+        "accent": "#426789",
+        "text": "#2D3740",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#66727D",
+        "border": "#BEC6CD"
+      }
+    },
+    {
+      "id": "obsidian-minimalist-gold",
+      "name": "Obsidian Minimalist & Gold",
+      "fontFamily": "Cinzel",
+      "fontKey": "cinzel",
+      "fontStack": "Cinzel, Georgia, serif",
+      "description": "Pure black surfaces with restrained gold accents.",
+      "tokens": {
+        "canvas": "#08090A",
+        "surface": "#171819",
+        "accent": "#D1AE58",
+        "text": "#F1EBDC",
+        "textOnAccent": "#17130A",
+        "muted": "#B9B09B",
+        "border": "#5B4B28"
+      }
+    },
+    {
+      "id": "warm-walnut-bone",
+      "name": "Warm Walnut & Bone",
+      "fontFamily": "PT Serif",
+      "fontKey": "pt-serif",
+      "fontStack": "\"PT Serif\", Georgia, serif",
+      "description": "Walnut-bark framing with a soft bone-white canvas.",
+      "tokens": {
+        "canvas": "#E8DDCC",
+        "surface": "#FBF6EC",
+        "accent": "#684838",
+        "text": "#352A24",
+        "textOnAccent": "#FFF9F0",
+        "muted": "#75665C",
+        "border": "#C9B49A"
+      }
+    },
+    {
+      "id": "electric-violet-graphite",
+      "name": "Electric Violet & Graphite",
+      "fontFamily": "Fira Code",
+      "fontKey": "fira-code",
+      "fontStack": "\"Fira Code\", ui-monospace, monospace",
+      "description": "Neon violet lines on a deep graphite work surface.",
+      "tokens": {
+        "canvas": "#1B1B22",
+        "surface": "#282831",
+        "accent": "#B275FA",
+        "text": "#F3EFF9",
+        "textOnAccent": "#180F22",
+        "muted": "#C1B7CF",
+        "border": "#64517A"
+      }
+    },
+    {
+      "id": "sunset-amber-charcoal",
+      "name": "Sunset Amber & Charcoal",
+      "fontFamily": "Poppins",
+      "fontKey": "poppins",
+      "fontStack": "Poppins, Arial, sans-serif",
+      "description": "Warm amber signals against dark volcanic charcoal.",
+      "tokens": {
+        "canvas": "#242321",
+        "surface": "#32302C",
+        "accent": "#E69527",
+        "text": "#F6F0E6",
+        "textOnAccent": "#211607",
+        "muted": "#C8BFB1",
+        "border": "#65513B"
+      }
+    },
+    {
+      "id": "cyber-cyan-volcanic",
+      "name": "Cyber Cyan & Dark Volcanic",
+      "fontFamily": "JetBrains Mono",
+      "fontKey": "jetbrains-mono",
+      "fontStack": "\"JetBrains Mono\", ui-monospace, monospace",
+      "description": "Neon cyan borders over matte-black cells.",
+      "tokens": {
+        "canvas": "#101315",
+        "surface": "#1A1F22",
+        "accent": "#20DDE4",
+        "text": "#ECF7F7",
+        "textOnAccent": "#071719",
+        "muted": "#B8C9CA",
+        "border": "#176B70"
+      }
+    },
+    {
+      "id": "terracotta-clay-sandstone",
+      "name": "Terracotta Clay & Sandstone",
+      "fontFamily": "DM Sans",
+      "fontKey": "dm-sans",
+      "fontStack": "\"DM Sans\", Arial, sans-serif",
+      "description": "Terracotta-orange details on sun-warmed sandstone.",
+      "tokens": {
+        "canvas": "#E8D7C5",
+        "surface": "#F9EFE3",
+        "accent": "#B65F45",
+        "text": "#3C2F29",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#75645B",
+        "border": "#C9A58C"
+      }
+    },
+    {
+      "id": "olive-grove-soft-pearl",
+      "name": "Olive Grove & Soft Pearl",
+      "fontFamily": "Cormorant Garamond",
+      "fontKey": "cormorant-garamond",
+      "fontStack": "\"Cormorant Garamond\", Georgia, serif",
+      "description": "Matte olive frames with a luminous soft-pearl canvas.",
+      "tokens": {
+        "canvas": "#ECECE2",
+        "surface": "#FBFBF6",
+        "accent": "#67713D",
+        "text": "#34392B",
+        "textOnAccent": "#FFFFFF",
+        "muted": "#6E7162",
+        "border": "#C2C6AA"
+      }
+    },
+    {
+      "id": "ochre-dust-dark-obsidian",
+      "name": "Ochre Dust & Dark Obsidian",
+      "fontFamily": "Oswald",
+      "fontKey": "oswald",
+      "fontStack": "Oswald, Impact, sans-serif",
+      "description": "Ochre-gold accents on smooth obsidian sidebars.",
+      "tokens": {
+        "canvas": "#111214",
+        "surface": "#202123",
+        "accent": "#D0A23A",
+        "text": "#F2EDDF",
+        "textOnAccent": "#201704",
+        "muted": "#C5BCA8",
+        "border": "#61502D"
+      }
+    }
+  ]
+}

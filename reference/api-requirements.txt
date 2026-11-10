@@ -1,0 +1,9 @@
+fastapi
+pymysql
+psycopg2-binary
+boto3
+cryptography
+sqlalchemy==2.0.52
+dnspython
+python-multipart
+openpyxl
